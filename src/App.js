@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+// Importacao do Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Importacap de Estilo CSS padrao
 import './App.css';
+
+// Importacao das paginas
+import Login from './pages/Login';
+import Home from './pages/Home';
+import CadastroProduto from './pages/CadastroProduto';
+import EditarProduto from './pages/EditarProduto';
+import CadastroUsuario from './pages/CadastroUsuario'
+
+
+// Importacao dos Componentes
+
+
+//Importacao do gerenciador de rotas
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import { Navbar } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Login />}/>
+        <Route path='/login' element={<Login />}/>
+        <Route path='/home' element={<Home />}/>
+        <Route path="/produto/cadastrar" element={<CadastroProduto />}/>
+        <Route path="/usuario/cadastrar" element={<CadastroUsuario />}/>
+        <Route path="/produto/editar/:id" element={<EditarProduto/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

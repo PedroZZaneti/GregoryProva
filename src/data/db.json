@@ -1,0 +1,57 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Gregory",
+      "email": "docemel@sodoce.com.br",
+      "senha": "brigadeiro123"
+    },
+    {
+      "id": "2",
+      "nome": "Pedro",
+      "email": "pedro@gmail.com",
+      "senha": "123"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "bc10",
+      "nome": "Bolo ",
+      "categoria": "Salgados",
+      "preco": "5",
+      "imagemUrl": "https://img-21.ccm2.net/NELvYhh-PIUfBOZZ2WhknCXRmAs=/940e8ffda27c43c7845c7af42926569b/ccm-faq/1363436.jpg"
+    },
+    {
+      "id": "2833",
+      "nome": "Coxinha",
+      "categoria": "Salgados",
+      "preco": "7.50",
+      "imagemUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLigfyds3_5OSm0C4_VTYXDa5g6e32kV9h7g&s"
+    },
+    {
+      "id": "27ad",
+      "nome": "Torta",
+      "categoria": "Tortas",
+      "preco": "47.00",
+      "imagemUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmBJIj9inJ-o8rRd-E9BEBy3K3zuSswyRadg&s"
+    }
+  ],
+  "cats": [
+    {
+      "id": "1",
+      "nome": "Bolos"
+    },
+    {
+      "id": "2",
+      "nome": "Salgados"
+    },
+    {
+      "id": "3",
+      "nome": "Tortas"
+    },
+    {
+      "id": "4",
+      "nome": "Bebidas"
+    }
+  ]
+}
